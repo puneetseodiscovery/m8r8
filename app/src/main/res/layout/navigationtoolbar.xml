@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/tooolbar"
+    android:layout_height="wrap_content"
+    android:background="@drawable/splashback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgeLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo" />
+
+
+        <TextView
+            android:id="@+id/toolbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Your invoice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/subheading"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageDrawer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_drawer"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

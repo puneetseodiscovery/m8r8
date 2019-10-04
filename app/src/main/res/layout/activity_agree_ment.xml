@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".agreement.AgreeMentActivity">
+
+    <include
+        android:id="@+id/tooolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tooolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeVideo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/splashback">
+
+                <ImageView
+                    android:id="@+id/imageVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_myreq"
+                    android:visibility="gone" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/startSplash"
+                    app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/textMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/splashback"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:padding="@dimen/padding"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imageSing"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/padding" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeVideo"
+                android:layout_marginLeft="@dimen/topmargin"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginRight="@dimen/topmargin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:id="@+id/relativeBorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_margin="@dimen/topmargin">
+
+                <TextView
+                    android:id="@+id/txtL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Borrower"
+                    android:fontFamily="@font/arial"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtBorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtL"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_toLeftOf="@id/imageBorrow"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/dateBorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtBorrow"
+                    android:layout_toRightOf="@id/signBorrow"
+                    android:hint="Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text" />
+
+                <ImageView
+                    android:id="@+id/signBorrow"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/txtBorrow"
+                    android:scaleType="fitXY" />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageBorrow"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeBorrow"
+                android:layout_margin="@dimen/topmargin">
+
+                <TextView
+                    android:id="@+id/txtB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLander"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtB"
+                    android:layout_marginRight="@dimen/padding"
+                    android:layout_toLeftOf="@id/imageLander"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/dateLander"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLander"
+                    android:layout_toRightOf="@id/signLander"
+                    android:hint="Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text" />
+
+                <ImageView
+                    android:id="@+id/signLander"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/txtLander"
+                    android:scaleType="fitXY" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageLander"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLender"
+                android:layout_margin="@dimen/margin"
+                android:background="@drawable/buttonback"
+                android:text="View invoice"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/video"
+        android:title="Watch how to do video" />
+
+    <item
+        android:id="@+id/myprofile"
+        android:title="My profile" />
+
+
+    <item
+        android:id="@+id/contract"
+        android:title="My agreements" />
+
+
+    <item
+        android:id="@+id/terms"
+        android:title="Terms &amp; conditions" />
+
+    <item
+        android:id="@+id/privacy"
+        android:title="Privacy policy" />
+    <item
+        android:id="@+id/art"
+        android:title="Art &amp; statement" />
+    <item
+        android:id="@+id/www"
+        android:title="Go to www.m8s.world " />
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+</menu>

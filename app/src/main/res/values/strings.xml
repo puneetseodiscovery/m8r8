@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">M8R8</string>
+    <string name="splash">© M8R8s World Sarl 2019. All rights reserved</string>
+    <string name="iagree">I agree with M8\'s terms and conditions, privacy policy and  art statement</string>
+    <string name="slowinternet">Slow or no Internet Connection"\n"Please check your internet setting</string>
+    <string name="noInternet">No internet connection</string>
+    <string name="facebook_app_id">1372779886193968</string>
+    <string name="fb_login_protocol_scheme">fb1372779886193968</string>
+    <string name="invoice">Enter the amount on the invoice</string>
+    <string name="takepicture">Take a picture of the invoice</string>
+    <string name="video">Write a message to your potential lender</string>
+    <string name="hint"><![CDATA[Type a message to your lender & explain why you want this invoice paid for you now....]]></string>
+    <string name="myacount">This agreement is between you and the borrower, you must press the Agreement  paid in full icon when you receive all payments. You can forgive any agreement at any time.</string>
+    <string name="comission">Please indicate what % of the invoice amount you would like to offer your lender for paying your invoice for you :</string>
+    <string name="pay">To make an agreement with your friend M8\'s R8\'s has an agreement creation fee of CHF5.00 would you like to pay that now or add it to the invoice amount you wish to be paid.</string>
+    <string name="sign">Please sign your offer and M8\'s R8\'s will send it to your potential lender to approve, refuse or adjust it.</string>
+    <string name="share">This agreement is between you and one of your friends Please find the friend you would like to lend and reward for paying this invoice on a social network or an instant messenger service</string>
+    <string name="msg_token_fmt">FCM Token: %s
+    </string>
+    <string name="share_using" />
+    <string name="good">Your offer has been sent to your M8. They can accept, adjust or reject it, please be patient and await their reply, you will receive a notification as soon as they answer it. Good luck!</string>
+</resources>
